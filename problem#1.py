@@ -4,7 +4,7 @@ def find_sum(list_e, k):
       if (list_e[i] + list_e[j]) == k:
         return True
 
-list_e = input().split(' ')
+list_e = list(map(lambda num: int(num), input().split(' ')))
 k = int(input())
 
 if find_sum(list_e,k):

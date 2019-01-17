@@ -1,14 +1,10 @@
-''''
+'''
 Good morning! Here's your coding interview problem for today.
 This problem was recently asked by Google.
 Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
 For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 Bonus: Can you do this in one pass?
-Upgrade to premium and get in-depth solutions to every problem.
-If you liked this problem, feel free to forward it along so they can subscribe here! As always, shoot us an email if there's anything we can help with!
-''''
-
-
+'''
 
 
 def find_sum(list_e, k):
@@ -17,10 +13,12 @@ def find_sum(list_e, k):
       if (list_e[i] + list_e[j]) == k:
         return True
 
-list_e = list(map(lambda num: int(num), input().split(' ')))
-k = int(input())
+list_e = [0, 7, 3, 8]
+k = 14
 
-if find_sum(list_e,k):
+
+
+if find_sum2(list_e,k):
   print('K IS A SUM of two numbers in the LIST')
 else:
   print('K IS NOT A SUM of two numbers in the LIST')
